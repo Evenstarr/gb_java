@@ -11,10 +11,11 @@ public class Lesson1 {
         int n = maxBit(i);
         System.out.println(n);
 
+        int[] m1 = iToMax(i, n);
+        System.out.println(Arrays.toString(m1));
 
-        System.out.println(Arrays.toString(iToMax(i, n)));
-
-        System.out.println(Arrays.toString(minToI(i, n)));
+        int[] m2 = minToI(i, n);
+        System.out.println(Arrays.toString(m2));
     }
 
     private static int findRandInt(int num) {
