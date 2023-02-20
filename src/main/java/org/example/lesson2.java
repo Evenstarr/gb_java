@@ -93,8 +93,6 @@ public class lesson2 {
     }
 
     private static String replaceCharAt(String str) {
-        long begin = System.currentTimeMillis();
-
         StringBuilder stringBuilder = new StringBuilder(str);
         int startIndex = 0;
         while (stringBuilder.indexOf("=") != -1) {
