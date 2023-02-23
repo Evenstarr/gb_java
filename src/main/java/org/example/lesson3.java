@@ -73,21 +73,21 @@ public class lesson3 {
 
         // 11
         long begin = System.currentTimeMillis();
-        List<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < 100000; i++) {
-            numbers.add(i);
+        List<String> numbers = new ArrayList<>();
+        for (int i = 0; i < 10000000; i++) {
+            numbers.add("str" + i);
         }
         long end = System.currentTimeMillis();
         System.out.println(end - begin);
 
-        List<Integer> linkedNumbers = new LinkedList<>();
-        begin = System.currentTimeMillis();
-        for (int i = 0; i < 100000; i++) {
-            linkedNumbers.add(i);
+        List<String> linkedNumbers = new LinkedList<>();
+        long newbegin = System.currentTimeMillis();
+        for (int i = 0; i < 10000000; i++) {
+            linkedNumbers.add("str" + i);
         }
-        end = System.currentTimeMillis();
-        System.out.println(end - begin);
+        long newend = System.currentTimeMillis();
+        System.out.println(newend - newbegin);
 
-        // На 1000 разницы не видно, а на 100000 - ArrayList в 2 раза быстрее, чем LinkedList.
+        // На 1000 разницы не видно, а на 10000000 - ArrayList быстрее, чем LinkedList.
     }
 }
