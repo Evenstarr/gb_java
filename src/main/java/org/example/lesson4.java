@@ -33,7 +33,7 @@ public class lesson4 {
                 firstName.add(data[1]);
                 patronymic.add(data[2]);
                 age.add(Integer.valueOf(data[3]));
-                gender.add(data[4]);
+                gender.add(data[4].toUpperCase());
                 idxTmp++;
             }
         }
